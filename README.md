@@ -1,6 +1,6 @@
 # Horus Examples
 
-## Example Using PYTHON
+## Example Using PYTHON and BANDIT
 
 This project there are examples to run using Horus and get vulnerabilities.
 
