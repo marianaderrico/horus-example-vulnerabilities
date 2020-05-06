@@ -1,6 +1,6 @@
 # Horus Examples
 
-# Example Using JAVASCRIPT and NPM
+# Example Using JAVASCRIPT and YARN
 
 This project there are examples to run using Horus and get vulnerabilities.
 
