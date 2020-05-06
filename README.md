@@ -1,6 +1,6 @@
 # Horus Examples
 
-## Example Using JAVA
+## Example Using JAVA and SPOTBUG
 
 This project there are examples to run using Horus and get vulnerabilities.
 
