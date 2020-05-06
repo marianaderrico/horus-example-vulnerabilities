@@ -1,6 +1,6 @@
 # Horus Examples
 
-## Example Using .NetCore 3.1
+## Example Using .NetCore 3.1 and CodeSecuriyScan
 
 This project there are examples to run using Horus and get vulnerabilities.
 
