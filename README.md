@@ -1,5 +1,7 @@
 # Horus Examples
 
+## Example Using KOTLIN and SPOTBUG
+
 This project there are examples to run using Horus and get vulnerabilities.
 
 Please get on the branch of the your language and see vulnerabilities
@@ -15,4 +17,6 @@ Please get on the branch of the your language and see vulnerabilities
 | javascript-npm                        | [NpmAudit](https://docs.npmjs.com/cli/audit)              |
 | javascript-yarn                       | [YarnAudit](https://yarnpkg.com/lang/en/docs/cli/audit/)  |
 | ruby-brakeman                         | [Brakeman](https://github.com/presidentbeef/brakeman)     |
-| gitleaks                              | [GitLeaks](https://github.com/zricethezav/gitleaks)     |
+| gitleaks                              | [GitLeaks](https://github.com/zricethezav/gitleaks)       |
+| kotlin-spotbug                        | [SpotBugs](https://spotbugs.github.io)                    |
+
