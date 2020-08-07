@@ -6,11 +6,11 @@ jobs:
   security:
     name: security
     runs-on: ubuntu-latest
-    container: horuszup/horus-cli
+#    container: horuszup/horus-cli
     steps:
       - name: Running Horus
         run: |
-          echo "Start running horus!"
-          sleep 5
+#          echo "Start running horus!"
+#          sleep 5
           docker ps
-          /bin/horus start -p="./"
+#          /bin/horus start -p="./"
