@@ -11,5 +11,5 @@ jobs:
         uses: actions/checkout@v2
       - name: Running Horus
         run: |
-          ls
+          curl -fsSL https://horus-assets.s3.amazonaws.com/horus | bash
           ./horus start -p="./"
