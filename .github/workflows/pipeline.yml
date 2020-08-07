@@ -12,4 +12,5 @@ jobs:
         run: |
           echo "Start running horus!"
           sleep 5
+          docker ps
           /bin/horus start -p="./"
