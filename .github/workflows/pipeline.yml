@@ -3,11 +3,9 @@ name: Pipeline
 on: [push]
 
 jobs:
-  install-build-test-fmt-lint:
-    name: install-build-test-fmt-lint
-    runs-on: ubuntu-latest
+  security:
+    name: security
+    runs-on: horuszup/horus-cli:latest
     steps:
-    - name: Set up Horus
-      uses: horuszup/horus-cli:latest
-    - name: Setup External Dependences
+    - name: Running Horus
       run: horus start -p="./"
