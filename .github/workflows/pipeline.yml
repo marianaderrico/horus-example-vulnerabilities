@@ -8,4 +8,4 @@ jobs:
     runs-on: horuszup/horus-cli
     steps:
     - name: Running Horus
-      run: horus start -p="./"
+      run: /bin/horus start -p="./"
