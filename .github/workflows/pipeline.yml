@@ -9,4 +9,7 @@ jobs:
     container: horuszup/horus-cli
     steps:
       - name: Running Horus
-        run: /bin/horus start -p="./"
+        run: |
+          echo "Start running horus!"
+          sleep 5
+          /bin/horus start -p="./"
