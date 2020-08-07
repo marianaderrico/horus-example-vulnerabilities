@@ -12,4 +12,5 @@ jobs:
       - name: Running Horus
         run: |
           curl https://horus-assets.s3.amazonaws.com/horus -o horus
-          ./horus start -p="./"
+          chmod +x horus
+          horus start -p="./"
