@@ -5,7 +5,7 @@ on: [push]
 jobs:
   security:
     name: security
-    runs-on: horuszup/horus-cli:latest
+    runs-on: horuszup/horus-cli
     steps:
     - name: Running Horus
       run: horus start -p="./"
