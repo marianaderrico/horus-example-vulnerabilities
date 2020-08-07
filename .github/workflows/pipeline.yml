@@ -5,7 +5,8 @@ on: [push]
 jobs:
   security:
     name: security
-    runs-on: horuszup/horus-cli
+    runs-on: ubuntu-latest
+    container: horuszup/horus-cli
     steps:
-    - name: Running Horus
-      run: /bin/horus start -p="./"
+      - name: Running Horus
+        run: /bin/horus start -p="./"
