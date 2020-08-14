@@ -15,5 +15,6 @@ jobs:
         sleep 5
         ls -a
         horus start -p .
-        docker ps -a
-        docker image ls
+        docker ps
+        ls -a
+        ls .horus
