@@ -1,0 +1,15 @@
+name: SecurityPipeline
+
+on: [push]
+
+jobs:
+  horus-security:
+    name: horus-security
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+    - name: Running Horus Security
+      run: |
+        curl -fsSL https://horus-assets.s3.amazonaws.com/install.sh | bash
+        horus start -p="./sub_project_b" -e="true"
