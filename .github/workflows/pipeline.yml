@@ -1,16 +1,14 @@
-name: Pipeline
+name: Security
 
 on: [push]
 
 jobs:
-  security:
-    name: security
+  horus:
+    name: horus
     runs-on: ubuntu-latest
+    container: horuszup/horus-cli:v1.0.16-alpha.3
     steps:
-      - name: Check out code into the Go module directory
-        uses: actions/checkout@v2
-      - name: Running Horus
-        run: |
-          curl https://horus-assets.s3.amazonaws.com/horus -o horus
-          chmod +x horus
-          ./horus start -p="./" -e="true"
+    - name: Check out code into the Go module directory
+      uses: actions/checkout@v2
+    - name: Running Horus Security
+      run: /usr/bin/horus start -p ./
