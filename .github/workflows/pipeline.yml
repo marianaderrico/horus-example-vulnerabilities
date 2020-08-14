@@ -6,11 +6,11 @@ jobs:
   horus:
     name: horus
     runs-on: ubuntu-latest
-    container: horuszup/horus-cli:v1.0.16-alpha.3
+    container: horuszup/horus-cli:v1.0.16-alpha.4
     steps:
     - name: Check out code into the Go module directory
       uses: actions/checkout@v2
     - name: Running Horus Security
       run: |
-        docker cp . horuszup/horus-cli:v1.0.16-alpha.3:/root
-        horus start -p /root
+        docker cp . horuszup/horus-cli:v1.0.16-alpha.3:/root/src
+        horus start -p /root/src
