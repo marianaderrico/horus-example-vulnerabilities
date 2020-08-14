@@ -16,5 +16,7 @@ jobs:
       uses: actions/checkout@v2
     - name: Running Horus Security
       run: |
-        mv -r * /tmp/horus_vol
+        ls
+        mkdir -p /tmp/horus_vol/
+        cp -r -a . /tmp/horus_vol
         horus start -p /tmp/horus_vol
