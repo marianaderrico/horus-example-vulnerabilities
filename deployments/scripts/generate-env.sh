@@ -1,5 +1,5 @@
 # horus client default environment variables
-HORUS_CLIENT_REPO_URL="https://github.com/globocom/horus.git"
+HORUS_CLIENT_REPO_URL="https://github.com/ZupIT/horus.git"
 HORUS_CLIENT_REPO_BRANCH="poc-golang-gosec"
 HORUS_CLIENT_API_ADDR="http://localhost:8888"
 HORUS_CLIENT_API_USE_HTTPS="false"

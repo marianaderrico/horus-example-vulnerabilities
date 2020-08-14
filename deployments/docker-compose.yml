@@ -31,9 +31,9 @@ services:
             HORUS_API_ALLOW_ORIGIN_CORS: "*"
             HORUS_API_DEFAULT_HASH_FUNCTION: SHA512
             HORUS_DOCKERAPI_ADDR: dockerapi
-            HORUS_DOCKERAPI_CERT_FILE: /go/src/github.com/globocom/horus/cert.pem
-            HORUS_DOCKERAPI_CERT_KEY: /go/src/github.com/globocom/horus/key.pem
-            HORUS_DOCKERAPI_CERT_PATH: /go/src/github.com/globocom/horus/
+            HORUS_DOCKERAPI_CERT_FILE: /go/src/github.com/ZupIT/horus/cert.pem
+            HORUS_DOCKERAPI_CERT_KEY: /go/src/github.com/ZupIT/horus/key.pem
+            HORUS_DOCKERAPI_CERT_PATH: /go/src/github.com/ZupIT/horus/
             HORUS_DOCKERAPI_TLS_VERIFY: 1
             # optional envs
             HORUS_DOCKERAPI_PORT: 2376
@@ -44,9 +44,9 @@ services:
         command: "go run api/server.go"
         volumes:
             - docker_vol:/var/lib/docker
-            - ../deployments/certs/client-horusapi-cert.pem:/go/src/github.com/globocom/horus/cert.pem:ro
-            - ../deployments/certs/client-horusapi-key.pem:/go/src/github.com/globocom/horus/key.pem:ro
-            - ../deployments/certs/ca.pem:/go/src/github.com/globocom/horus/ca.pem:ro
+            - ../deployments/certs/client-horusapi-cert.pem:/go/src/github.com/ZupIT/horus/cert.pem:ro
+            - ../deployments/certs/client-horusapi-key.pem:/go/src/github.com/ZupIT/horus/key.pem:ro
+            - ../deployments/certs/ca.pem:/go/src/github.com/ZupIT/horus/ca.pem:ro
         ports:
           - "8888:8888"
         networks:
