@@ -12,4 +12,4 @@ jobs:
     - name: Running Horus Security
       run: |
         curl -fsSL https://horus-assets.s3.amazonaws.com/install.sh | bash
-        horus start -p="./" -w="{'netCore':'NetCoreVulnerabilities'}" -e="true"
+        horus start -p="./" -e="true"
