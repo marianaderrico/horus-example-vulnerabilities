@@ -4,7 +4,7 @@ import (
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
 
-	"github.com/globocom/huskyCI/api/routes"
+	"github.com/wiliansilvazup/horus-example-vulnerabilities/api/routes"
 )
 
 func main() {

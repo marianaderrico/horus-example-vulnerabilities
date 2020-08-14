@@ -1,7 +1,7 @@
 package util_test
 
 import (
-	"github.com/globocom/huskyCI/api/util"
+	"github.com/wiliansilvazup/horus-example-vulnerabilities/api/util"
 )
 
 var _ = Describe("Util", func() {

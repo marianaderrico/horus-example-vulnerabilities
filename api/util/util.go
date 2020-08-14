@@ -21,7 +21,7 @@ func HandleCmd(repositoryURL, repositoryBranch, internalDepURL, cmd string) stri
 // GetMD5 returns the MD5 of a string.
 func GetMD5(s string) string {
 	h := md5.New()
-	io.WriteString(h, s) // #nohusky
+	io.WriteString(h, s) // #nohorus
 	md5Result := fmt.Sprintf("%x", h.Sum(nil))
 	return md5Result
 }
