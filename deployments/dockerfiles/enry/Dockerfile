@@ -1,5 +1,5 @@
 # Dockerfile used to create "husyci/enry" image
-# https://hub.docker.com/r/huskyci/enry/
+# https://hub.docker.com/r/horuszup/enry/
 
 FROM golang:alpine as builder
 

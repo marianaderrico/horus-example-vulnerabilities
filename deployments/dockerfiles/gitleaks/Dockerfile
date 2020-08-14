@@ -1,5 +1,5 @@
 # Dockerfile used to create "husyci/gitleaks" image
-# https://hub.docker.com/r/huskyci/gitleaks/
+# https://hub.docker.com/r/horuszup/gitleaks/
 
 FROM zricethezav/gitleaks
 

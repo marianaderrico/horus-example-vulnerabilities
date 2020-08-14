@@ -1,5 +1,5 @@
-# Dockerfile used to create "huskyci/npmaudit" image
-# https://hub.docker.com/r/huskyci/npmaudit/
+# Dockerfile used to create "horus/npmaudit" image
+# https://hub.docker.com/r/horuszup/npmaudit/
 
 FROM node:alpine
 

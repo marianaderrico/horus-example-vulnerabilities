@@ -1,5 +1,5 @@
 # Dockerfile used to create "husyci/gitauthors" image
-# https://hub.docker.com/r/huskyci/gitauthors/
+# https://hub.docker.com/r/horuszup/gitauthors/
 
 FROM alpine:3.8
 

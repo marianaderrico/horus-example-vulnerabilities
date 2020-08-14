@@ -1,5 +1,5 @@
 # Dockerfile used to create "husyci/bandit:3.6" image
-# https://hub.docker.com/r/huskyci/bandit/
+# https://hub.docker.com/r/horuszup/bandit/
 
 FROM python:3.6-alpine as builder
 
