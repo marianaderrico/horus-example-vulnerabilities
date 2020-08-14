@@ -2,19 +2,19 @@ name: Security
 
 on: [push]
 
+
 jobs:
   horus:
     name: horus
     runs-on: ubuntu-latest
-    container: horuszup/horus-cli:v1.0.16-alpha.4
+    container:
+      image: horuszup/horus-cli:v1.0.16-alpha.4
+      volumes:
+        - /tmp/horus_vol:/root/src
     steps:
     - name: Check out code into the Go module directory
       uses: actions/checkout@v2
     - name: Running Horus Security
       run: |
-        sleep 5
-        ls -a
-        horus start -p .
-        docker ps
-        ls -a
-        ls .horus
+        cp . /tmp/horus_vol
+        horus start -p /root/src
