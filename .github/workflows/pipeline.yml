@@ -13,6 +13,7 @@ jobs:
     - name: Running Horus Security
       run: |
         sleep 5
+        ls -a
         horus start -p .
         docker ps
         ls -a
