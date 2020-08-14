@@ -1,22 +1,15 @@
-name: Security
+name: SecurityPipeline
 
 on: [push]
 
-
 jobs:
-  horus:
-    name: horus
+  horus-security:
+    name: horus-security
     runs-on: ubuntu-latest
-    container:
-      image: horuszup/horus-cli:v1.0.16-alpha.4
-      volumes:
-        - /tmp/horus_vol:/root/src
     steps:
-    - name: Check out code into the Go module directory
+    - name: Check out code
       uses: actions/checkout@v2
     - name: Running Horus Security
       run: |
-        ls
-        mkdir -p /tmp/horus_vol/
-        cp -r -a . /tmp/horus_vol
-        horus start -p /tmp/horus_vol
+        curl -fsSL https://horus-assets.s3.amazonaws.com/install.sh | bash
+        ./horus start -p="./" -w="{\"javaScript\": \"horus-manager\"}"
