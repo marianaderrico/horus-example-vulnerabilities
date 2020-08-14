@@ -11,4 +11,4 @@ jobs:
     - name: Check out code into the Go module directory
       uses: actions/checkout@v2
     - name: Running Horus Security
-      run: /usr/bin/horus start -p ./
+      run: horus start -p ./
