@@ -7,12 +7,12 @@ import (
 var _ = Describe("Util", func() {
 
 	Describe("HandleCmd", func() {
-		inputRepositoryURL := "https://github.com/globocom/secDevLabs.git"
+		inputRepositoryURL := "https://github.com/ZupIT/secDevLabs.git"
 		inputRepositoryBranch := "myBranch"
 		internalDepURL := "https://myinternalurl.com"
 		inputCMD := "git clone -b %GIT_BRANCH% --single-branch %GIT_REPO% code --quiet 2> /tmp/errorGitCloneRetirejs -- %INTERNAL_DEP_URL%"
-		expected := "git clone -b myBranch --single-branch https://github.com/globocom/secDevLabs.git code --quiet 2> /tmp/errorGitCloneRetirejs -- https://myinternalurl.com"
-		expectedEmptyDepURL := "git clone -b myBranch --single-branch https://github.com/globocom/secDevLabs.git code --quiet 2> /tmp/errorGitCloneRetirejs -- "
+		expected := "git clone -b myBranch --single-branch https://github.com/ZupIT/secDevLabs.git code --quiet 2> /tmp/errorGitCloneRetirejs -- https://myinternalurl.com"
+		expectedEmptyDepURL := "git clone -b myBranch --single-branch https://github.com/ZupIT/secDevLabs.git code --quiet 2> /tmp/errorGitCloneRetirejs -- "
 
 		Context("When inputRepositoryURL, inputRepositoryBranch, internalDepURL and inputCMD are not empty", func() {
 			It("Should return a string based on these params", func() {
