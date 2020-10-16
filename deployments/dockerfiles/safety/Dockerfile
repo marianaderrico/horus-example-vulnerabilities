@@ -1,6 +1,3 @@
-# Dockerfile used to create "husyci/safety" image
-# https://hub.docker.com/r/horuszup/safety/
-
 FROM python:3.6-alpine as builder
 
 # Install and compile safety + its dependencies

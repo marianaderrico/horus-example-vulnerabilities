@@ -1,6 +1,3 @@
-# Dockerfile used to create "husyci/brakeman" image
-# https://hub.docker.com/r/horuszup/brakeman/
-
 FROM ruby:2.4-alpine
 
 RUN apk update && apk upgrade \

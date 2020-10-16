@@ -1,6 +1,3 @@
-# Dockerfile used to create "husyci/gitauthors" image
-# https://hub.docker.com/r/horuszup/gitauthors/
-
 FROM alpine:3.8
 
 RUN apk update && apk upgrade \

@@ -1,6 +1,3 @@
-# Dockerfile used to create "husyci/enry" image
-# https://hub.docker.com/r/horuszup/enry/
-
 FROM golang:alpine as builder
 
 RUN apk update && apk upgrade \
