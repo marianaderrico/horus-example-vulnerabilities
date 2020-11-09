@@ -15,6 +15,7 @@ jobs:
           command: |
             curl -fsSL https://horusec-cli.s3.amazonaws.com/install.sh | bash
             horusec start -p="./" -e="true"
+
 workflows:
   pipeline:
     jobs:
