@@ -25,7 +25,7 @@ jobs:
       - run:
           name: Horusec Security Test
           command: |
-            curl -fsSL https://horus-assets.s3.amazonaws.com/install.sh | bash -s v1-0-19-alpha-1
+            curl -fsSL https://horus-assets.s3.amazonaws.com/install.sh | bash
             horus start -p ./ -e "true"
   deploy:
     executor: horusec-executor
