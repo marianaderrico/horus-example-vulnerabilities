@@ -19,4 +19,4 @@ jobs:
 workflows:
   pipeline:
     jobs:
-      - horusec:
+      - horusec
