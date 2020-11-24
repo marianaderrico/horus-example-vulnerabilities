@@ -6,9 +6,12 @@ jobs:
   horus-security:
     name: horus-security
     runs-on: ubuntu-latest
-    container: horuszup/horusec-cli:latest
+    container:
+      image: horuszup/horusec-cli:latest
     steps:
     - name: Check out code
       uses: actions/checkout@v2
     - name: Running Horus Security
-      run: sh /usr/local/bin/hoursec-cli.sh -p="./" -e="true"
+      run: |
+        ls
+        sh /usr/local/bin/hoursec-cli.sh -p="./" -e="true"
