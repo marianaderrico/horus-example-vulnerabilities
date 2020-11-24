@@ -6,11 +6,15 @@ jobs:
   horus-security:
     name: horus-security
     runs-on: ubuntu-latest
-    container:
-      image: horuszup/horusec-cli
-      volumes: [$(pwd):/project]
+    container: horuszup/horusec-cli
     steps:
       - name: Check out code into the Go module directory
         uses: actions/checkout@v2
       - name: security
-        run: horusec start -p="/project" -e="true"
+        run: |
+          echo "actual path: "
+          ls ./
+          echo "bin folder: "
+          ls /usr/local/bin
+          echo "====="
+          horusec start -p="/project" -e="true"
