@@ -13,4 +13,4 @@ jobs:
       - name: Check out code into the Go module directory
         uses: actions/checkout@v2
       - name: security
-        run: sh /usr/local/bin/horusec-cli.sh -p="./" -e="true"
+        run: sh /usr/local/bin/horusec-cli.sh -p="./" -e="true" --log-level="debug"
