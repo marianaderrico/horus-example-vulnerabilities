@@ -6,7 +6,9 @@ jobs:
   horusec-security:
     name: horusec-security
     runs-on: ubuntu-latest
-    container: horuszup/horusec-cli
+    container:
+      image: horuszup/horusec-cli
+      options: '--privileged'
     steps:
       - name: Check out code into the Go module directory
         uses: actions/checkout@v2
