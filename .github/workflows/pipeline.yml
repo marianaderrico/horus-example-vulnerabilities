@@ -6,11 +6,10 @@ jobs:
   horusec-security:
     name: horusec-security
     runs-on: ubuntu-latest
-    container:
-      image: horuszup/horusec-cli
-      options: '--privileged'
     steps:
-      - name: Check out code into the Go module directory
-        uses: actions/checkout@v2
-      - name: security
-        run: sh /usr/local/bin/horusec-cli.sh -p="./" -e="true" --log-level="trace"
+    - name: Check out code
+      uses: actions/checkout@v2
+    - name: Running Horusec Security
+      run: |
+        curl -fsSL https://horusec.io/bin/install.sh | bash
+        horusec start -p="./" -e="true"
