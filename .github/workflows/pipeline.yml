@@ -10,8 +10,6 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v2
     - name: Running Horusec Security
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       run: |
         curl -fsSL https://horusec.io/bin/install.sh | bash
-        horusec start -p="./" -e="true" -a="$ACCESS_TOKEN" -u="https://api-horus-dev.zup.com.br"
+        horusec start -p="./" -e="true"
