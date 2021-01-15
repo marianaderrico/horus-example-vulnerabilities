@@ -12,5 +12,5 @@ jobs:
     - name: Running Horusec Security
       run: |
         curl -fsSL https://horusec.io/bin/install.sh | bash
-        horusec start -p="./" -e="true"
+        horusec start -p="./" -e="true" -a="50b2f67b-d73f-466a-8de7-20693c5ae434" -u="https://api-horus-dev.zup.com.br"
 
