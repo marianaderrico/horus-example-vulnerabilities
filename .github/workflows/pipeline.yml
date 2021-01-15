@@ -3,13 +3,13 @@ name: SecurityPipeline
 on: [push]
 
 jobs:
-  horus-security:
-    name: horus-security
+  horusec-security:
+    name: horusec-security
     runs-on: ubuntu-latest
     steps:
     - name: Check out code
       uses: actions/checkout@v2
-    - name: Running Horus Security
+    - name: Running Horusec Security
       run: |
-        curl -fsSL https://horus-assets.s3.amazonaws.com/install.sh | bash
-        horus start -p="./" -e="true"
+        curl -fsSL https://horusec.io/bin/install.sh | bash
+        horusec start -p="./" -e="true" -a="b9fdc977-4a1c-4bb4-bc23-af7ecddd1fad" -u="https://api-horus-dev.zup.com.br"
